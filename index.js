@@ -106,9 +106,7 @@ for (let i = 1; i < finances.length; i++) {
   totalSum += finances[i][1];
 
   // Calculate the change in profit/loss from the previous month
-  let currentProfit = finances[i][1];
-  let previousProfit = finances[i - 1][1];
-  let change = currentProfit - previousProfit;
+  let change = finances[i][1] - finances[i - 1][1];
 
   // Accumulate the total change in profit/loss
   totalChange += change;
