@@ -123,7 +123,7 @@ for (let i = 1; i < finances.length; i++) {
 }
 
 // Calculate the average change over the given period
-const avgChange = totalChange / totalMonths;
+const avgChange = totalChange / (totalMonths - 1);
 
 // Output the financial analysis results to the console
 console.log('Financial Analysis');
