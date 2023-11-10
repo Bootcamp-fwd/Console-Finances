@@ -89,7 +89,7 @@ var finances = [
 
 
 // Initialize variables to store financial analysis data
-let totalMonths = 0;
+let totalMonths = 1;
 let totalSum = 0;
 let totalChange = 0;
 let greatestIncrease = 0;
@@ -130,6 +130,6 @@ console.log('Financial Analysis');
 console.log('----------------');
 console.log(`Total Months: ${totalMonths}`)
 console.log(`Total: $${totalSum}`)
-console.log(`Average Change: ${+avgChange.toFixed(2)}`)
+console.log(`Average Change: ${avgChange.toFixed(2)}`)
 console.log(`Greatest Increase in Profits/Losses: ${monthYearIncrease} ($${greatestIncrease})`)
 console.log(`Greatest Decrease in Profits/Losses: ${monthYearDecrease} ($${greatestDecrease})`)
