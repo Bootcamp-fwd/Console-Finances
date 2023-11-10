@@ -88,20 +88,29 @@ var finances = [
 ];
 
 
-let totalMonths = 0
-let totalSum = 0
+let totalMonths = 0;
+let totalSum = 0;
+let totalChange = 0;
 
 
-for (let i = 0; i < finances.length; i++) {
-  totalMonths = i + 1;
+for (let i = 1; i < finances.length; i++) {
+  totalMonths = i;
   totalSum += finances[i][1];
 
+  let currentProfit = finances[i][1];
+  let previousProfit = finances[i - 1][1];
+  let change = currentProfit - previousProfit;
+
+  totalChange += change;
 }
+
+// Calculate the Average Change
+avgChange = totalChange / totalMonths;
 
 console.log('Financial Analysis');
 console.log('----------------');
 console.log(`Total Months: ${totalMonths}`)
 console.log(`Total: $${totalSum}`)
-// console.log(`Average Change: ${undefined}`)
+console.log(`Average Change: ${+avgChange.toFixed(2)}`)
 // console.log(`Greatest Increase in Profits/Losses: (${monthYearIncrease}) ($-${undefined})`)
 // console.log(`Greatest Decrease in Profits/Losses: (${monthYearDecrease}) ($-${undefined})`)
