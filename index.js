@@ -112,11 +112,11 @@ for (let i = 1; i < finances.length; i++) {
   totalChange += change;
 
   // Check if the current change is the greatest increase or decrease
-  if (change >= greatestIncrease) {
+  if (change > greatestIncrease) {
     greatestIncrease = change;
     monthYearIncrease = finances[i][0];
 
-  } else if (change <= greatestDecrease) {
+  } else if (change < greatestDecrease) {
     greatestDecrease = change;
     monthYearDecrease = finances[i][0];
   }
