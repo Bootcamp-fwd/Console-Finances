@@ -88,29 +88,50 @@ var finances = [
 ];
 
 
+// Initialize variables to store financial analysis data
 let totalMonths = 0;
 let totalSum = 0;
 let totalChange = 0;
+let greatestIncrease = 0;
+let greatestDecrease = 0;
+let monthYearIncrease = '';
+let monthYearDecrease = '';
 
-
+// Iterate through the finances array starting from the second element (index 1)
 for (let i = 1; i < finances.length; i++) {
+  // Update the total number of months
   totalMonths = i;
+
+  // Accumulate the total profit/loss
   totalSum += finances[i][1];
 
+  // Calculate the change in profit/loss from the previous month
   let currentProfit = finances[i][1];
   let previousProfit = finances[i - 1][1];
   let change = currentProfit - previousProfit;
 
+  // Accumulate the total change in profit/loss
   totalChange += change;
+
+  // Check if the current change is the greatest increase or decrease
+  if (change >= greatestIncrease) {
+    greatestIncrease = change;
+    monthYearIncrease = finances[i][0];
+
+  } else if (change <= greatestDecrease) {
+    greatestDecrease = change;
+    monthYearDecrease = finances[i][0];
+  }
 }
 
-// Calculate the Average Change
+// Calculate the average change over the given period
 avgChange = totalChange / totalMonths;
 
+// Output the financial analysis results to the console
 console.log('Financial Analysis');
 console.log('----------------');
 console.log(`Total Months: ${totalMonths}`)
 console.log(`Total: $${totalSum}`)
 console.log(`Average Change: ${+avgChange.toFixed(2)}`)
-// console.log(`Greatest Increase in Profits/Losses: (${monthYearIncrease}) ($-${undefined})`)
-// console.log(`Greatest Decrease in Profits/Losses: (${monthYearDecrease}) ($-${undefined})`)
+console.log(`Greatest Increase in Profits/Losses: ${monthYearIncrease} ($${greatestIncrease})`)
+console.log(`Greatest Decrease in Profits/Losses: ${monthYearDecrease} ($${greatestDecrease})`)
