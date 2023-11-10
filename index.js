@@ -86,3 +86,22 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+
+let totalMonths = 0
+let totalSum = 0
+
+
+for (let i = 0; i < finances.length; i++) {
+  totalMonths = i + 1;
+  totalSum += finances[i][1];
+
+}
+
+console.log('Financial Analysis');
+console.log('----------------');
+console.log(`Total Months: ${totalMonths}`)
+console.log(`Total: $${totalSum}`)
+// console.log(`Average Change: ${undefined}`)
+// console.log(`Greatest Increase in Profits/Losses: (${monthYearIncrease}) ($-${undefined})`)
+// console.log(`Greatest Decrease in Profits/Losses: (${monthYearDecrease}) ($-${undefined})`)
