@@ -100,7 +100,7 @@ let monthYearDecrease = '';
 // Iterate through the finances array starting from the second element (index 1)
 for (let i = 1; i < finances.length; i++) {
   // Update the total number of months
-  totalMonths = i;
+  totalMonths++;
 
   // Accumulate the total profit/loss
   totalSum += finances[i][1];
