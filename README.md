@@ -160,6 +160,7 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 
 
 Copyright © 2023 Mihai-Adrian P.
+
 This project is licensed under the `ℹ️  MIT-License`. See the [MIT License](https://github.com/pmAdriaan/Console-Finances/blob/main/LICENSE) file for additional info.
 
 ---
