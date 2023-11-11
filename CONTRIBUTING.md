@@ -47,6 +47,7 @@ If you encounter issues or have suggestions for improvements, please use the [Gi
 - Help others and encourage a positive and collaborative environment.
 
 Copyright © 2023 Mihai-Adrian P.
+
 By contributing to Console-Finances, you agree that your contributions will be licensed under the project's [MIT License](https://github.com/pmAdriaan/Console-Finances/blob/main/LICENSE).
 
 Thank you for contributing! 🚀
