@@ -109,7 +109,7 @@ cd Console-Finances
 ```
 
 ### 🌐 Live Demo Console-Finances
-► [Console-Finances](https://pmadriaan.github.io/Console-Finances/)
+► [Console-Finances](https://bootcamp-fwd.github.io/Console-Finances/)
 
 
 ### 📸 Console-Finances Screenshot
